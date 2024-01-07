@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async JS Practice</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .loading {
+        text-align: center;
+      }
+      .card {
+        padding: 10px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(195, 194, 194);
+        border-radius: 15px;
+        display: flex;
+        margin-top: 10px;
+        transition: 0.3s;
+      }
+      .card:hover {
+        background-color: rgb(54, 54, 54);
+        color: white;
+      }
+      .img {
+        width: 10%;
+        border-radius: 50%;
+
+      }
+      .title {
+        text-transform: capitalize;
+        margin-left: 10px;
+      }
+      .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid black;
+    margin-left: 47vw;
+    margin-top: 25vh;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+      
+    </style>
+  </head>
+  <body>
+    <h1>Github Users</h1>
+    <div class="loader"></div>
+    
+
+    <script src="index.js"></script>
+  </body>
+</html>
